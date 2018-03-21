@@ -8,14 +8,59 @@ body {
 }
 
 #logo img {
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
     display: block;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+
+
 .info {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+
+.buy h1,
+h2,
+p {
+    font-family: 'Georgia', serif;
+    color: #052951;
+    padding: 10px;
+}
+
+#beregn {
+    background-color: #00B9EA;
+    color: whitesmoke;
+    border: 15px solid #00B9EA;
+    border-radius: 70px;
+    font-family: 'Georgia', serif;
+    font-size: .7em;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+
+#beregn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+ul {
+    list-style-image: url('img/pil.svg');
+    padding: 40px;
+}
+
+
+
+
+
+.annoce {
     height: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -40,8 +85,10 @@ body {
 /***** MEDIA QUERIES*****/
 
 @media screen and (min-width:1024px) and (orientation: landscape) {
-
     .info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .annoce {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 100px;
     }
@@ -49,8 +96,12 @@ body {
 }
 
 @media screen and (min-width: 2560px) {
-
     .info {
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+    .annoce {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 100px;
     }
@@ -66,4 +117,8 @@ footer {
     color: whitesmoke;
     position: absolute;
 
+}
+
+footer p {
+    text-align: center;
 }
