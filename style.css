@@ -3,10 +3,16 @@
     padding: 0;
 }
 
+body {
+    background: #ffffff;
+}
+
 #logo img {
-    width: 80%;
+    width: 40%;
     margin: 0 auto;
     display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .info {
@@ -15,7 +21,6 @@
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
 }
-
 
 .grid-item {
     background-color: #F2F2F2;
@@ -27,21 +32,6 @@
 
 
 
-.a img {
-    width: 100%;
-}
-
-
-
-.b img {
-    width: 100%;
-}
-
-
-
-.c img {
-    width: 100%;
-}
 
 
 
@@ -52,24 +42,20 @@
 @media screen and (min-width:1024px) and (orientation: landscape) {
 
     .info {
-        height: 40vw;
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 100px;
     }
 
-    footer {
-        background-color: #052951;
-        width: 100%;
-        color: whitesmoke;
+}
 
+@media screen and (min-width: 2560px) {
 
+    .info {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 100px;
     }
 
 }
-
-
-
-
 
 
 /***FOOOTER*****/
