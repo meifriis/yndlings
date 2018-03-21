@@ -15,23 +15,43 @@ body {
     margin-bottom: 20px;
 }
 
-
-
 .info {
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
 
 .buy h1,
 h2,
 p {
+    font-family: 'Georgia', sans-serif
+}
+
+.buy h1,
+h2,
+p,
+li {
     font-family: 'Georgia', serif;
     color: #052951;
     padding: 10px;
 }
+
+.buy h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.buy h2 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.buy p,
+li {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+
 
 #beregn {
     background-color: #00B9EA;
@@ -85,22 +105,41 @@ ul {
 /***** MEDIA QUERIES*****/
 
 @media screen and (min-width:1024px) and (orientation: landscape) {
-    .info {
-        grid-template-columns: repeat(1, 1fr);
-    }
+
     .annoce {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 100px;
+
     }
+    #info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .buy {
+
+        flex-grow: 1;
+        flex-basis: 200px;
+        padding: 50px;
+    }
+
 
 }
 
 @media screen and (min-width: 2560px) {
-    .info {
-        grid-template-columns: repeat(2, 1fr);
 
-
+    #info {
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    .buy {
+
+        flex-grow: 1;
+        flex-basis: 200px;
+        padding: 50px;
+    }
+
     .annoce {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 100px;
@@ -114,11 +153,12 @@ ul {
 footer {
     background-color: #052951;
     width: 100%;
-    color: whitesmoke;
     position: absolute;
 
 }
 
 footer p {
     text-align: center;
+    color: whitesmoke;
+
 }
