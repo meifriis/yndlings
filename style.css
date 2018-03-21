@@ -10,7 +10,7 @@
 }
 
 .info {
-    height: 200vw;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
@@ -18,23 +18,29 @@
 
 
 .grid-item {
-    background-color: #D5EDFA;
+    background-color: #F2F2F2;
     padding: 20px;
     font-size: 30px;
     text-align: center;
 
 }
 
-.a {
-    background-color: #F2F2F2;
+
+
+.a img {
+    width: 100%;
 }
 
-.b {
-    background-color: #F2F2F2;
+
+
+.b img {
+    width: 100%;
 }
 
-.c {
-    background-color: #F2F2F2;
+
+
+.c img {
+    width: 100%;
 }
 
 
@@ -71,8 +77,7 @@
 footer {
     background-color: #052951;
     width: 100%;
-    height: auto;
-    color: #5c1111;
-
+    color: whitesmoke;
+    position: absolute;
 
 }
