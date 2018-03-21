@@ -10,12 +10,19 @@
 }
 
 .info {
-    height: 300vw;
+    height: 200vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
 }
 
+.mereinfo {
+    height: 100vw;
+    width: 100vw;
+    margin-top: 20px;
+    background-color: rgba(225, 14, 73, 0.22);
+
+}
 
 .grid-item {
     background-color: #D5EDFA;
@@ -30,12 +37,13 @@
 }
 
 .b {
-    background-color: #D5EDFA;
+    background-color: #F2F2F2;
 }
 
 .c {
-    background-color: rgba(225, 14, 73, 0.22);
+    background-color: #F2F2F2;
 }
+
 
 
 
@@ -45,23 +53,12 @@
 @media screen and (min-width:1024px) and (orientation: landscape) {
 
     .info {
-        height: 150vw;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    footer {
-        height: 30vw;
+        height: 40vw;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 100px;
     }
 
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -72,7 +69,7 @@
 footer {
     background-color: #052951;
     width: 100%;
-    height: 60vw;
+    height: 10vw;
     color: whitesmoke;
 
 
