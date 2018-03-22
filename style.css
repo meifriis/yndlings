@@ -72,6 +72,7 @@ li {
     border 0;
     display: block;
     margin: 0 auto;
+    padding-right: 100px;
 
 }
 
@@ -159,7 +160,7 @@ ul {
 
 @media screen and (min-width:1024px) and (orientation: landscape) {
     #logo img {
-        width: 60%;
+        width: 50%;
         padding-top: 30px;
     }
     .annoce {
@@ -176,32 +177,36 @@ ul {
 
         flex-grow: 1;
         flex-basis: 200px;
-        padding: 50px;
-        line-height: 1.5em;
+        padding: 20px;
+        line-height: 2.5em;
 
     }
 
     .buy1 {
         flex-grow: 1;
         flex-basis: 200px;
-        padding: 50px;
+        padding: 20px;
         border-left: 2px solid rgba(142, 144, 142, 0.43);
         border-top: none;
-        margin-bottom: 50px;
         line-height: 1.5em;
 
 
     }
     .buy1 h1 {
-        text-align: center;
+        text-align: left;
+        padding-left: 60px;
+
         font-size: 1.8em;
-        line-height: 1.5em;
-
-
+        line-height: 1.6em;
+    }
+    ul {
+        padding-left: 80px;
+        margin-top: -20px;
     }
     .buy h1 {
         font-size: 1.8em;
         line-height: 1.5em;
+        margin-top: 11px;
 
     }
     #beregn {
