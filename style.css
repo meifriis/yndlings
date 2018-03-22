@@ -20,35 +20,48 @@ body {
     flex-wrap: wrap;
 }
 
-.buy h1,
-h2,
-p {
-    font-family: 'Georgia', sans-serif
+#middle {
+    text-align: center;
 }
 
-.buy h1,
+h1,
 h2,
 p,
-li {
+li,
+.buy1 {
     font-family: 'Georgia', serif;
     color: #052951;
-    padding: 10px;
 }
 
-.buy h1 {
+h1 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 
-.buy h2 {
+h2 {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
-.buy p,
+p,
 li {
     font-size: 1.2em;
     padding: 10px;
+}
+
+.buy {
+    margin-top: 10px;
+    padding: 20px;
+    line-height: 1.5;
+
+}
+
+.buy1 {
+    border-top: 2px solid rgba(142, 144, 142, 0.43);
+    margin-top: 20px;
+    padding-top: 20px;
+    width: 100vw;
+
 }
 
 
@@ -96,16 +109,48 @@ ul {
 }
 
 
-
-
-
-
-
-
 /***** MEDIA QUERIES*****/
 
-@media screen and (min-width:1024px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (orientation: portrait) {
+    #logo img {
+        width: 60%;
+        padding-top: 30px;
+    }
+    .buy {
+        flex-grow: 1;
+        flex-basis: 200px;
+        padding: 50px;
 
+    }
+    .buy1 {
+        flex-grow: 1;
+        flex-basis: 200px;
+        padding: 50px;
+        border-left: 2px solid rgba(142, 144, 142, 0.43);
+        border-top: none;
+        margin-bottom: 50px;
+
+    }
+    .buy1 h1 {
+        text-align: left;
+        padding-left: 20px;
+        font-size: 2em;
+    }
+    .buy h1 {
+        font-size: 2em;
+    }
+    p {
+        line-height: 1.5;
+    }
+}
+
+
+
+@media screen and (min-width:1024px) and (orientation: landscape) {
+    #logo img {
+        width: 60%;
+        padding-top: 30px;
+    }
     .annoce {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 100px;
@@ -121,22 +166,93 @@ ul {
         flex-grow: 1;
         flex-basis: 200px;
         padding: 50px;
+        line-height: 1.5em;
+
     }
 
+    .buy1 {
+        flex-grow: 1;
+        flex-basis: 200px;
+        padding: 50px;
+        border-left: 2px solid rgba(142, 144, 142, 0.43);
+        border-top: none;
+        margin-bottom: 50px;
+        line-height: 1.5em;
 
+
+
+    }
+    .buy1 h1 {
+        text-align: center;
+        font-size: 2em;
+        line-height: 1.2;
+
+
+    }
+    .buy h1 {
+        font-size: 2em;
+        line-height: 1.2;
+
+    }
+    #beregn {
+        border: 15px solid #00B9EA;
+        font-size: 0.7em;
+        margin-top: 10px;
+        border-radius: 50px;
+
+    }
 }
 
 @media screen and (min-width: 2560px) {
-
+    #logo img {
+        width: 50%;
+        padding-top: 30px;
+    }
     #info {
         display: flex;
         flex-wrap: wrap;
     }
 
     .buy {
-
         flex-grow: 1;
         flex-basis: 200px;
+        padding: 50px;
+    }
+
+    .buy1 {
+        flex-grow: 1;
+        flex-basis: 200px;
+        padding: 50px;
+        border-left: 2px solid rgba(142, 144, 142, 0.43);
+        border-top: none;
+        margin-bottom: 50px;
+
+    }
+    li {
+        font-size: 3em;
+        padding: 50px;
+    }
+    #beregn {
+        border: 35px solid #00B9EA;
+        font-size: 1.7em;
+        margin-top: 40px;
+    }
+    p {
+        font-size: 3em;
+        line-height: 1.5;
+
+    }
+    .buy1 h1 {
+        text-align: left;
+        padding-left: 20px;
+        font-size: 4.5em;
+
+    }
+    .buy h1 {
+        font-size: 4.5em;
+    }
+    .buy h2 {
+        font-size: 2.5em;
         padding: 50px;
     }
 
