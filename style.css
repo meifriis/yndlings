@@ -197,17 +197,17 @@ ul {
     }
 
     #logo img {
-        width: 60%;
+        width: 40%;
         margin: 0 auto;
         display: block;
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
     #yndlingslogo img {
-        width: 55%;
+        width: 45%;
         position: absolute;
-        left: 220px;
-        top: 250px;
+        left: 370px;
+        top: 190px;
 
 
     }
