@@ -17,6 +17,68 @@ body {
 }
 
 
+.dropbtn img {
+    width: 30%;
+}
+
+.dropbtn {
+    color: white;
+    background-color: transparent;
+    width: 113px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-align: left;
+    font-family: 'Georgia', serif;
+}
+
+
+/*------ DROPDOWN CONTAINER -------*/
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+}
+
+.dropdown ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+
+/*-------- DROPDOWN INDHOLD -------*/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    z-index: 1;
+    background-color: #D5EDFA;
+
+}
+
+.dropdown-content a {
+    color: #052951;
+    text-decoration: none;
+    padding: 5px;
+    width: 150px;
+    display: block;
+    transition: all 0.5s ease;
+    font-size: 1.2em;
+}
+
+.dropdown-content a:hover {
+    color: #E10E49;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 .info {
     display: flex;
     flex-wrap: wrap;
@@ -85,12 +147,16 @@ li {
     border: 15px solid #00B9EA;
     border-radius: 70px;
     font-family: 'Georgia', serif;
-    font-size: .7em;
     margin: 0 auto;
     display: block;
     transition: all 0.2s ease;
 }
 
+.buy a {
+    text-decoration: none;
+    font-size: 1.3em;
+
+}
 
 #beregn:hover {
     cursor: pointer;
@@ -102,8 +168,6 @@ ul {
     padding: 40px;
 }
 
-
-
 .annoce {
     height: auto;
     display: grid;
@@ -111,11 +175,15 @@ ul {
     grid-gap: 20px;
 }
 
+.grid-item img {
+    width: 100%;
+}
+
 .grid-item {
     background-color: #F2F2F2;
-    padding: 20px;
-    font-size: 30px;
     text-align: center;
+    padding: 10px;
+    margin: 10px;
 
 }
 
@@ -134,7 +202,9 @@ ul {
 
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
-
+    .dropdown {
+        padding: 30px;
+    }
     #splash {
         background-image: url(splash/ipad.svg);
         height: 133vw;
@@ -173,7 +243,12 @@ ul {
 
 
 @media screen and (min-width:1024px) and (orientation: landscape) {
-
+    .dropdown {
+        padding: 30px;
+    }
+    .dropbtn img {
+        width: 40%;
+    }
     #splash {
         background-image: url(splash/desktop.svg);
         height: 56.25vw;
@@ -236,6 +311,12 @@ ul {
 }
 
 @media screen and (min-width: 2560px) {
+    .dropdown {
+        padding: 30px;
+    }
+    .dropbtn img {
+        width: 100%;
+    }
     #splash {
         background-image: url(splash/desktop.svg);
         height: 56.25vw;
@@ -298,6 +379,13 @@ ul {
 }
 
 @media screen and (min-width: 5120px) {
+
+    .dropdown {
+        padding: 80px;
+    }
+    .dropbtn img {
+        width: 140%;
+    }
     #splash {
         background-image: url(splash/retina.svg);
         height: 56.25vw;
