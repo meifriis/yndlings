@@ -122,9 +122,25 @@ ul {
 
 /***** MEDIA QUERIES*****/
 
+@media screen and (min-width: 627px) and (orientation: landscape) {
+    #splash {
+        background-image: url(splash/iphoneflad.svg);
+        height: 59.8vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+
 @media screen and (min-width: 768px) and (orientation: portrait) {
 
-
+    #splash {
+        background-image: url(splash/ipad.svg);
+        height: 133vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .buy {
         flex-grow: 1;
         flex-basis: 200px;
@@ -158,7 +174,12 @@ ul {
 
 @media screen and (min-width:1024px) and (orientation: landscape) {
 
-
+    #splash {
+        background-image: url(splash/ipadflad.svg);
+        height: 56.25vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .annoce {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 100px;
@@ -215,7 +236,12 @@ ul {
 }
 
 @media screen and (min-width: 2560px) {
-
+    #splash {
+        background-image: url(splash/desktop.svg);
+        height: 56.25vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     #info {
         display: flex;
         flex-wrap: wrap;
@@ -271,11 +297,13 @@ ul {
 
 }
 
-
-
-
 @media screen and (min-width: 5120px) {
-
+    #splash {
+        background-image: url(splash/retina.svg);
+        height: 56.25vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     #info {
         display: flex;
         flex-wrap: wrap;
