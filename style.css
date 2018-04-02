@@ -8,28 +8,14 @@ body {
 }
 
 #splash {
-    background-color: #D5EDFA;
-    height: 667px;
     width: 100%;
-}
-
-#logo img {
-    width: 90%;
-    margin: 0 auto;
-    display: block;
-    padding-top: 40px;
-    background-color: #D5EDFA;
-}
-
-
-#yndlingslogo img {
-    width: 95%;
-    position: absolute;
-    left: 17px;
-    top: 200px;
-
+    height: 178vw;
+    background-image: url(splash/iphone.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
+
 
 .info {
     display: flex;
@@ -138,26 +124,6 @@ ul {
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
 
-    #splash {
-        background-color: #D5EDFA;
-        height: 1024px;
-    }
-
-    #logo img {
-        width: 90%;
-        margin: 0 auto;
-        display: block;
-        padding-top: 70px;
-    }
-
-    #yndlingslogo img {
-        width: 95%;
-        position: absolute;
-        left: 30px;
-        top: 300px;
-
-
-    }
 
     .buy {
         flex-grow: 1;
@@ -191,26 +157,7 @@ ul {
 
 
 @media screen and (min-width:1024px) and (orientation: landscape) {
-    #splash {
-        background-color: #D5EDFA;
-        height: 768px;
-    }
 
-    #logo img {
-        width: 40%;
-        margin: 0 auto;
-        display: block;
-        padding-top: 20px;
-    }
-
-    #yndlingslogo img {
-        width: 45%;
-        position: absolute;
-        left: 370px;
-        top: 190px;
-
-
-    }
 
     .annoce {
         grid-template-columns: repeat(3, 1fr);
@@ -268,26 +215,7 @@ ul {
 }
 
 @media screen and (min-width: 2560px) {
-    #splash {
-        background-color: #D5EDFA;
-        height: 1440px;
-    }
 
-    #logo img {
-        width: 45%;
-        margin: 0 auto;
-        display: block;
-        padding-top: 40px;
-    }
-
-    #yndlingslogo img {
-        width: 47%;
-        position: absolute;
-        left: 680px;
-        top: 380px;
-
-
-    }
     #info {
         display: flex;
         flex-wrap: wrap;
@@ -347,26 +275,7 @@ ul {
 
 
 @media screen and (min-width: 5120px) {
-    #splash {
-        background-color: #D5EDFA;
-        height: 2880px;
-    }
 
-    #logo img {
-        width: 45%;
-        margin: 0 auto;
-        display: block;
-        padding-top: 40px;
-    }
-
-    #yndlingslogo img {
-        width: 47%;
-        position: absolute;
-        left: 1340px;
-        top: 880px;
-
-
-    }
     #info {
         display: flex;
         flex-wrap: wrap;
