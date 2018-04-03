@@ -82,6 +82,7 @@ body {
 .info {
     display: flex;
     flex-wrap: wrap;
+    background-color: rgba(0, 185, 234, 0.36);
 }
 
 #middle {
@@ -117,6 +118,39 @@ li {
     margin-top: 10px;
     padding: 20px;
     line-height: 1.5;
+
+}
+
+
+/**** YNDLINGS BASIS OG TING*****/
+
+.basisting {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    background-color: rgba(225, 14, 73, 0.14);
+}
+
+#yb {
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+#element {
+    width: 70%;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+#element2 {
+    width: 70%;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
 
 }
 
@@ -167,6 +201,9 @@ ul {
     list-style-image: url('img/pil.svg');
     padding: 40px;
 }
+
+
+
 
 .annoce {
     height: auto;
@@ -248,6 +285,22 @@ footer p {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    #yb {
+        width: 50%;
+
+    }
+
+    #element {
+        width: 45%;
+
+    }
+
+    #element2 {
+        width: 45%;
+
+    }
+
     .buy {
         flex-grow: 1;
         flex-basis: 200px;
@@ -296,6 +349,32 @@ footer p {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    #yb {
+        width: 50%;
+        padding: 10px;
+    }
+    #element {
+        width: 31%;
+        display: block;
+        margin: 0 auto;
+    }
+    #element2 {
+        width: 49%;
+
+    }
+
+    .basisting p {
+        padding: 20px;
+    }
+
+    .basisting {
+        display: grid;
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+
+    }
+
     .annoce {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 100px;
