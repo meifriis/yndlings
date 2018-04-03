@@ -377,7 +377,6 @@ footer p {
 
     .annoce {
         grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 100px;
 
     }
     #info {
@@ -449,6 +448,8 @@ footer p {
 
     .socialmedia {
         grid-gap: 300px;
+        padding-top: 10px;
+
     }
     .content_box img {
         width: 7%;
@@ -521,7 +522,6 @@ footer p {
 
     .annoce {
         grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 100px;
     }
     .up img {
         width: 3%;
@@ -544,6 +544,8 @@ footer p {
     }
     .socialmedia {
         grid-gap: 700px;
+        padding-top: 10px;
+
     }
     footer {
         font-size: 3em;
@@ -614,7 +616,6 @@ footer p {
 
     .annoce {
         grid-template-columns: repeat(3, 1fr);
-        margin-bottom: 100px;
     }
     .up img {
         width: 3%;
@@ -637,6 +638,8 @@ footer p {
     }
     .socialmedia {
         grid-gap: 1400px;
+        padding-top: 10px;
+
     }
     footer {
         font-size: 4em;
