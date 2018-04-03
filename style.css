@@ -187,6 +187,9 @@ ul {
 
 }
 
+.up {
+    display: none;
+}
 
 /***** MEDIA QUERIES*****/
 
@@ -197,6 +200,7 @@ ul {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
 }
 
 
@@ -308,6 +312,30 @@ ul {
         border-radius: 50px;
 
     }
+
+    .up img {
+        width: 3%;
+        margin: 10px;
+        position: absolute;
+        left: 1170px;
+        top: 630px;
+
+    }
+
+    .up {
+
+        position: absolute;
+        background-color: #052951;
+        top: 1240px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .up:hover {
+        cursor: pointer;
+    }
+
 }
 
 @media screen and (min-width: 2560px) {
@@ -375,6 +403,33 @@ ul {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 100px;
     }
+
+
+    .up img {
+        width: 2%;
+        margin: 10px;
+        position: absolute;
+        left: 2408px;
+        top: 2450px;
+
+    }
+
+    .up {
+
+        position: absolute;
+        background-color: #052951;
+        top: 1240px;
+        width: 100%;
+        height: auto;
+        display: block;
+
+
+    }
+
+    .up:hover {
+        cursor: pointer;
+    }
+
 
 }
 
@@ -445,6 +500,35 @@ ul {
         margin-bottom: 100px;
     }
 
+
+    .up img {
+        width: 2%;
+        margin: 10px;
+        position: absolute;
+        left: 4908px;
+        top: 4980px;
+
+    }
+
+    .up {
+
+        position: absolute;
+        background-color: #052951;
+        top: 1240px;
+        width: 100%;
+        height: auto;
+        display: block;
+
+
+    }
+
+    .up:hover {
+        cursor: pointer;
+    }
+    footer {
+        font-size: 2em;
+    }
+
 }
 
 @media all and (max-width: 855px) {
@@ -458,12 +542,14 @@ ul {
 
 
 
+
 /***FOOOTER*****/
 
 footer {
     background-color: #052951;
     width: 100%;
     position: absolute;
+    height: auto;
 
 }
 
